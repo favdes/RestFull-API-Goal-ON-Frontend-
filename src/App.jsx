@@ -1,5 +1,5 @@
 import './App.css';
-import AllUsers from './Pages/AllUsers';
+import AllUsers from './pages/AllUsers'
 import Navbar from './layout/Navbar';
 import Home from './pages/Home';
 import NewUser from './pages/NewUser'
