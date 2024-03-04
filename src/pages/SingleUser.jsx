@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ const SingleUser = () => {
       setIsLoading(true);
 
       let dataGotten = await axios.get(
-         (` http://localhost:8080/api/user/${userId}`)
+         (`https://backend-xt2t.onrender.com/api/user/${userId}`)
       );
       console.log(dataGotten.data.user);
       setData(dataGotten.data.user);
@@ -30,7 +30,7 @@ const SingleUser = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`http://localhost:8080/api/user/${userId}`);
+      await axios.delete(`https://backend-xt2t.onrender.com/api/user/${userId}`);
       navigate("/AllUsers");
     } catch (error) {}
   };
@@ -64,7 +64,7 @@ const SingleUser = () => {
               className="btn btn-danger w-50"
               onClick={() => handleDelete(data._id)}
             >
-              delete
+              DELETE
             </button>
           </div>
         </div>

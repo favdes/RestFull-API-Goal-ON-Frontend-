@@ -18,8 +18,6 @@ function App() {
       <Route path='/AllUsers' element={<AllUsers/>}/>
       <Route path='/NewUser' element={<NewUser/>}/>
       <Route path='/SingleUser/:userId' element={<SingleUser/>}/>
-      
-    
     </Routes>
     </BrowserRouter>
 

@@ -1,4 +1,4 @@
-import React , {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner';
 import{Link} from 'react-router-dom';
@@ -11,8 +11,8 @@ const AllUsers = () => {
   const getData = async ()=>{
     try{
       setIsLoading(true);
-      const fetcher = await axios.get("http://localhost:8080/api/user");
-      console.log(fetcher.data.users);;
+      const fetcher = await axios.get("https://backend-xt2t.onrender.com/api/user");
+      console.log(fetcher.data.users);
 
       setDate(fetcher.data.users);
     }catch (error){

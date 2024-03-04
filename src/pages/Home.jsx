@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import heroImg from '../assets/WhatsApp Image 2023-11-22 at 12.23.16_10bef0e7.jpg'
 
 const Home = () => {

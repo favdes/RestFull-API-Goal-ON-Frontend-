@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import formImg from '../assets/WhatsApp Image 2023-11-22 at 12.23.15_70dcc01b.jpg'
@@ -18,7 +18,7 @@ const NewUser = () => {
     e.preventDefault()
     // console.log("hello world");
     try{
-      const data = await axios.post(' http://localhost:8080/api/user',{
+      const data = await axios.post('https://backend-xt2t.onrender.com/api/user',{
         name,
         email,
         profession,
